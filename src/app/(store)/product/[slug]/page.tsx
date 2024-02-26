@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: ProductProps): Promise<Metada
     }
 }
 
-export async function genereateStaticParams() {
+export async function generateStaticParams() {
 
     const response = await api('/products/featured')
     const products: Product[] = await response.json()
